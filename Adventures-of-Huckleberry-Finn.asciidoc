@@ -1,6 +1,5 @@
 = ADVENTURES OF HUCKLEBERRY FINN (Tom Sawyer's Comrade)
 By Mark Twain
-
 :toc:
 
 EXPLANATORY
@@ -8329,14 +8328,10 @@ light as a feather right straight off, and my troubles all gone.  So I
 got a piece of paper and a pencil, all glad and excited, and set down
 and wrote:
 
-[verse]
-____
+[quote, HUCK FINN]
 Miss Watson, your runaway nigger Jim is down here two mile below
 Pikesville, and Mr. Phelps has got him and he will give him up for the
 reward if you send.
-
-HUCK FINN.
-____
 
 image:images/c31-271.jpg[c31-271.jpg (62K)]
 
