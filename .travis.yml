@@ -4,7 +4,7 @@ before_install:
 - gem install asciidoctor tilt
 - sudo apt-get install xsltproc
 script:
-- git clone https://github.com/rdhyee/asciidoctor-htmlbook.git
+- git clone https://github.com/sethwoodworth/asciidoctor-htmlbook.git
 - asciidoctor -a toc -b xhtml5 -d book -T ./asciidoctor-htmlbook/htmlbook-autogen/
   -d book Adventures-of-Huckleberry-Finn.asciidoc -o Adventures-of-Huckleberry-Finn.html
 - git clone https://github.com/sethwoodworth/HTMLBook
