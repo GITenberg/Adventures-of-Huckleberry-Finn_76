@@ -1,0 +1,27 @@
+language: ruby
+sudo: required
+before_install:
+- gem install asciidoctor tilt
+- sudo apt-get install xsltproc
+script:
+- git clone https://github.com/rdhyee/asciidoctor-htmlbook.git
+- asciidoctor -a toc -b xhtml5 -d book -T ./asciidoctor-htmlbook/htmlbook-autogen/
+  -d book Adventures-of-Huckleberry-Finn.asciidoc -o Adventures-of-Huckleberry-Finn.html
+- git clone https://github.com/sethwoodworth/HTMLBook
+- xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl
+  Adventures-of-Huckleberry-Finn.html
+- cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
+- cp cover.png OEBPS/cover.png
+- zip -rX Adventures-of-Huckleberry-Finn.epub mimetype
+- zip -rX Adventures-of-Huckleberry-Finn.epub OEBPS/ META-INF/
+branches:
+  only:
+  - master
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: hlvS8pru/BXucO3yYc7zjUEQ1SEH+nSaQk7X8PCWYDgecrY9wE39qh6oK2dT7jH+aRhD4CmFKfKe9R1T88oPbI3UMR9NXFtJG1pO4wTTvdCGYST6Pl/KdTYkeubHSJiaJ0FbONQCtuEnpJYI474Ai6GU0aZBwI1H8W990oD0FaM=
+  file: Adventures-of-Huckleberry-Finn.epub
+  on:
+    repo: sethwoodworth/Adventures-of-Huckleberry-Finn_76
