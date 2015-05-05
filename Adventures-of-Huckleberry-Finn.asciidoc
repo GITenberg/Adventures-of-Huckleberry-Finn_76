@@ -1,6 +1,6 @@
 = Adventures of Huckleberry Finn (Tom Sawyer's Comrade)
 Mark Twain
-v0.0.1
+v0.0.2
 :toc:
 
 [colophon]

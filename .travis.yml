@@ -12,8 +12,10 @@ script:
   Adventures-of-Huckleberry-Finn.html
 - cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
 - cp cover.png OEBPS/cover.png
+- mv ./images ./OEBPS/
 - zip -rX Adventures-of-Huckleberry-Finn.epub mimetype
 - zip -rX Adventures-of-Huckleberry-Finn.epub OEBPS/ META-INF/
+- zip -rX Adventures-of-Huckleberry-Finn.epub OEBPS/images/
 branches:
   only:
   - master
