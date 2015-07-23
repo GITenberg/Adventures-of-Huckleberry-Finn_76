@@ -1,0 +1,70 @@
+contributor:
+  illustrator:
+    agent_name: Kemble, E. W. (Edward Windsor)
+    aliases:
+    - Kemble, E. W. (Edward Winsor)
+    - Kemble, Edward Windsor
+    birthdate: 1861
+    deathdate: 1933
+    gutenberg_agent_id: '37155'
+    url: http://www.gutenberg.org/2009/agents/37155
+    wikipedia: http://en.wikipedia.org/wiki/E._W._Kemble
+covers:
+- cover_type: archival
+  image_path: 76/76-h/images/cover.jpg
+  rights: Public domain in the USA.
+  rights_url: http://creativecommons.org/about/pdm
+- cover_type: archival
+  image_path: 76/76-h/76-h/images/cover.jpg
+  rights: Public domain in the USA.
+  rights_url: http://creativecommons.org/about/pdm
+- cover_type: archival
+  image_path: 76/images/bookcover.jpg
+  rights: Public domain in the USA.
+  rights_url: http://creativecommons.org/about/pdm
+- cover_type: archival
+  image_path: ///public/vhost/g/gutenberg/private/publish/76/images/titlepage.jpg
+  rights: Public domain in the USA.
+  rights_url: http://creativecommons.org/about/pdm
+- cover_type: archival
+  image_path: 76/76-h/images/bookcover.jpg
+  rights: Public domain in the USA.
+  rights_url: http://creativecommons.org/about/pdm
+creator:
+  author:
+    agent_name: Twain, Mark
+    aliases:
+    - Clemens, Samuel Langhorne
+    - Twain, Mark (Samuel Clemens)
+    birthdate: 1835
+    deathdate: 1910
+    gutenberg_agent_id: '53'
+    url: http://www.gutenberg.org/2009/agents/53
+    wikipedia: http://en.wikipedia.org/wiki/Mark_Twain
+description: 'Wikipedia: http://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn'
+gutenberg_bookshelf:
+- Best Books Ever Listings
+- Banned Books from Anne Haight's list
+gutenberg_issued: '2004-06-29'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '76'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- '!lcsh:Male friendship -- Fiction'
+- '!lcsh:Bildungsromans'
+- '!lcsh:Finn, Huckleberry (Fictitious character) -- Fiction'
+- '!lcsh:Adventure stories'
+- '!lcsh:Mississippi River -- Fiction'
+- '!lcc:PS'
+- '!lcsh:Boys -- Fiction'
+- '!lcsh:Runaway children -- Fiction'
+- '!lcsh:Missouri -- Fiction'
+- '!lcsh:Humorous stories'
+- '!lcsh:Fugitive slaves -- Fiction'
+- '!lcsh:Race relations -- Fiction'
+title: Adventures of Huckleberry Finn
+url: http://www.gutenberg.org/ebooks/76
