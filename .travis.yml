@@ -1,8 +1,6 @@
 language: ruby
-sudo: required
 before_install:
 - gem install asciidoctor tilt
-- sudo apt-get install xsltproc
 script:
 - git clone https://github.com/sethwoodworth/asciidoctor-htmlbook.git
 - asciidoctor -a toc -b xhtml5 -d book -T ./asciidoctor-htmlbook/htmlbook-autogen/
@@ -23,7 +21,11 @@ deploy:
   skip_cleanup: true
   provider: releases
   api_key:
-    secure: hlvS8pru/BXucO3yYc7zjUEQ1SEH+nSaQk7X8PCWYDgecrY9wE39qh6oK2dT7jH+aRhD4CmFKfKe9R1T88oPbI3UMR9NXFtJG1pO4wTTvdCGYST6Pl/KdTYkeubHSJiaJ0FbONQCtuEnpJYI474Ai6GU0aZBwI1H8W990oD0FaM=
+    secure: Cjd9d6zOe5GRM1n3nMchic/7g5Wy04ffv5DqamhdrkHpZjMpz1y0UySvIB5htVhNWflWAd+pC62gZmwsYhHzO2rPyCJegNPXTJH4YhvH5lvjF6ejJRnn21VYheIgIEfb4TIH4dgqSfpL7Q0d+Xw43QKhmmgFYSt7F4SsENQHZK3wFxTpj7K8rSPRC6BMznZPvXOIAPvjLtt+ia6BKuGIIkWSF9aCNjkTo+MQ/ucS3/L3zbqAXngz0cSoKIGHSBuxvPdMq6H0jex8NiO3sutT7dgrvg9xcFTRo9AgXdLzLte7WJ2CXiSvQ3XZ/3iewPe1vrbJ9FCqNf/lCmSXd4aEqzos2gn66fFEwloRiAskmU3t54LJzh5UxY1MV3tM3e+ajrHl28VYyM7PkBDZdkHwUzo1+/SPKbEKMHXyAEgiITz1FIF5Xe8U7qetFBeJoaUjbKrEDGETbDxEbaMrjuHvmwUE6UteXBN2Yx2uvOLJdl5eDgmBR0g/ppEzeDAjCm9IW0NjDMd2svwtJgqGyd5ySxSXbrY/SeV4ffS10k3ZrJmLY2tZddfDBKv37hZjyj4MbhkrIt4MR4luSbhbMsWGiI1loLMgO/fd7EP2xmOfGi1SR4BigchfglErdHf3kGDRbcThv0a3h9Wc4BtVOwWzadPjF2dmE2PFrPELYiqN9iQ=
   file: Adventures-of-Huckleberry-Finn.epub
   on:
-    repo: sethwoodworth/Adventures-of-Huckleberry-Finn_76
+    repo: rdhyee/Adventures-of-Huckleberry-Finn_76
+addons:
+  apt:
+    packages:
+    - xsltproc
