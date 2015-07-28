@@ -2,7 +2,7 @@ language: ruby
 before_install:
 - gem install asciidoctor tilt
 script:
-- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('/metadata.yml'); puts meta['_version'];"`
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
 - git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
 - asciidoctor -a toc,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
   -d book book.asciidoc -o book.html
