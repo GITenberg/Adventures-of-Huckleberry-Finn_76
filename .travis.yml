@@ -25,7 +25,7 @@ deploy:
     secure: hlvS8pru/BXucO3yYc7zjUEQ1SEH+nSaQk7X8PCWYDgecrY9wE39qh6oK2dT7jH+aRhD4CmFKfKe9R1T88oPbI3UMR9NXFtJG1pO4wTTvdCGYST6Pl/KdTYkeubHSJiaJ0FbONQCtuEnpJYI474Ai6GU0aZBwI1H8W990oD0FaM=
   file: Adventures-of-Huckleberry-Finn.epub
   on:
-    repo: gitenberg/Adventures-of-Huckleberry-Finn_76
+    repo: GITenberg/Adventures-of-Huckleberry-Finn_76
 addons:
   apt:
     packages:
