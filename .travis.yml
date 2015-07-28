@@ -11,9 +11,9 @@ script:
 - cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
 - cp cover.jpg OEBPS/cover.jpg
 - mv ./images ./OEBPS/
-- zip -rX Adventures-of-Huckleberry-Finn.epub mimetype
-- zip -rX Adventures-of-Huckleberry-Finn.epub OEBPS/ META-INF/
-- zip -rX Adventures-of-Huckleberry-Finn.epub OEBPS/images/
+- zip -rX book.epub mimetype
+- zip -rX book.epub OEBPS/ META-INF/
+- zip -rX book.epub OEBPS/images/
 - mv book.epub Adventures-of-Huckleberry-Finn.epub
 branches:
   only:
@@ -26,3 +26,7 @@ deploy:
   file: Adventures-of-Huckleberry-Finn.epub
   on:
     repo: gitenberg/Adventures-of-Huckleberry-Finn_76
+addons:
+  apt:
+    packages:
+    - xsltproc
