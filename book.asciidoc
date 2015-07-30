@@ -3,27 +3,6 @@ Mark Twain
 v{version}
 :toc:
 
-[colophon]
-== Copyright
-
-This edition of _Adventures of Huckleberry Finn_ is maintained, archived, and curated as part of
-the GITENBERG PROJECT.
-
-This work is in the public domain.
-
-If you find any issues with this work, please report them at
-https://github.com/GITenberg/Adventures-of-Huckleberry-Finn_76/issues
-
-+
-
-Cover provided by Recovering the Classics
-
-Artist: Kjell Roger, (C) 2013
-
-Made available under a Creative Commons Attribution-NonCommercial 4.0 license
-
-https://creativecommons.org/licenses/by-nc/4.0/
-
 
 == EXPLANATORY
 
