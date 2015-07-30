@@ -57,21 +57,22 @@ gutenberg_type: Text
 identifiers:
   gutenberg: '76'
 language: en
-publisher: Project Gutenberg
-rights: Public domain in the USA.
-rights_url: http://creativecommons.org/about/pdm
+publication_date: 2015-08-01
+publisher: Project Gutenberg and Recovering the Classics
+rights: CC BY-NC.
+rights_url: http://creativecommons.org/licenses/by-nc/4.0/
 subjects:
-- '!lcsh:Bildungsromans'
-- '!lcsh:Mississippi River -- Fiction'
-- '!lcsh:Male friendship -- Fiction'
-- '!lcsh:Boys -- Fiction'
-- '!lcsh:Fugitive slaves -- Fiction'
-- '!lcsh:Runaway children -- Fiction'
-- '!lcsh:Race relations -- Fiction'
-- '!lcsh:Finn, Huckleberry (Fictitious character) -- Fiction'
-- '!lcsh:Missouri -- Fiction'
-- '!lcsh:Adventure stories'
-- '!lcc:PS'
-- '!lcsh:Humorous stories'
+- '!lcsh: Bildungsromans'
+- '!lcsh: Mississippi River -- Fiction'
+- '!lcsh: Male friendship -- Fiction'
+- '!lcsh: Boys -- Fiction'
+- '!lcsh: Fugitive slaves -- Fiction'
+- '!lcsh: Runaway children -- Fiction'
+- '!lcsh: Race relations -- Fiction'
+- '!lcsh: Finn, Huckleberry (Fictitious character) -- Fiction'
+- '!lcsh: Missouri -- Fiction'
+- '!lcsh: Adventure stories'
+- '!lcc: PS'
+- '!lcsh: Humorous stories'
 title: Adventures of Huckleberry Finn
 url: http://www.gutenberg.org/ebooks/76
