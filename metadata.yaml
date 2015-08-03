@@ -12,11 +12,11 @@ contributor:
     url: http://www.gutenberg.org/2009/agents/37155
     wikipedia: http://en.wikipedia.org/wiki/E._W._Kemble
 covers:
-- cover_type: original
+- attribution: Priscilla Parizeau, 2015
+  cover_type: original
   image_path: cover.jpg
   rights: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
   rights_url: https://creativecommons.org/licenses/by-nc/4.0/
-  attribution: Priscilla Parizeau, 2015
 - cover_type: archival
   image_path: 76/76-h/images/cover.jpg
   rights: Public domain in the USA.
