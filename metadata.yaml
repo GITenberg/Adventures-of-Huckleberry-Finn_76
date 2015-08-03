@@ -1,22 +1,24 @@
 _repo: Adventures-of-Huckleberry-Finn_76
+_version: 0.0.9
 contributor:
   illustrator:
     agent_name: Kemble, E. W. (Edward Windsor)
     aliases:
-    - Kemble, Edward Windsor
     - Kemble, E. W. (Edward Winsor)
+    - Kemble, Edward Windsor
     birthdate: 1861
     deathdate: 1933
     gutenberg_agent_id: '37155'
     url: http://www.gutenberg.org/2009/agents/37155
     wikipedia: http://en.wikipedia.org/wiki/E._W._Kemble
 covers:
+- cover_type: original
+  image_path: cover.jpg
+  rights: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+  rights_url: https://creativecommons.org/licenses/by-nc/4.0/
+  attribution: Priscilla Parizeau, 2015
 - cover_type: archival
-  image_path: 76/76-h/76-h/images/cover.jpg
-  rights: Public domain in the USA.
-  rights_url: http://creativecommons.org/about/pdm
-- cover_type: archival
-  image_path: 76/images/bookcover.jpg
+  image_path: 76/76-h/images/cover.jpg
   rights: Public domain in the USA.
   rights_url: http://creativecommons.org/about/pdm
 - cover_type: archival
@@ -24,19 +26,23 @@ covers:
   rights: Public domain in the USA.
   rights_url: http://creativecommons.org/about/pdm
 - cover_type: archival
+  image_path: 76/76-h/76-h/images/cover.jpg
+  rights: Public domain in the USA.
+  rights_url: http://creativecommons.org/about/pdm
+- cover_type: archival
   image_path: 76/76-h/images/bookcover.jpg
   rights: Public domain in the USA.
   rights_url: http://creativecommons.org/about/pdm
 - cover_type: archival
-  image_path: 76/76-h/images/cover.jpg
+  image_path: 76/images/bookcover.jpg
   rights: Public domain in the USA.
   rights_url: http://creativecommons.org/about/pdm
 creator:
   author:
     agent_name: Twain, Mark
     aliases:
-    - Twain, Mark (Samuel Clemens)
     - Clemens, Samuel Langhorne
+    - Twain, Mark (Samuel Clemens)
     birthdate: 1835
     deathdate: 1910
     gutenberg_agent_id: '53'
@@ -51,21 +57,22 @@ gutenberg_type: Text
 identifiers:
   gutenberg: '76'
 language: en
-publisher: Project Gutenberg
-rights: Public domain in the USA.
-rights_url: http://creativecommons.org/about/pdm
+publication_date: 2015-08-01
+publisher: Recovering the Classics
+rights: CC BY-NC
+rights_url: http://creativecommons.org/licenses/by-nc/4.0/
 subjects:
-- '!lcsh: Male friendship -- Fiction'
-- '!lcsh: Fugitive slaves -- Fiction'
 - '!lcsh: Bildungsromans'
 - '!lcsh: Mississippi River -- Fiction'
-- '!lcsh: Adventure stories'
-- '!lcsh: Missouri -- Fiction'
+- '!lcsh: Male friendship -- Fiction'
+- '!lcsh: Boys -- Fiction'
+- '!lcsh: Fugitive slaves -- Fiction'
 - '!lcsh: Runaway children -- Fiction'
+- '!lcsh: Race relations -- Fiction'
 - '!lcsh: Finn, Huckleberry (Fictitious character) -- Fiction'
+- '!lcsh: Missouri -- Fiction'
+- '!lcsh: Adventure stories'
 - '!lcc: PS'
 - '!lcsh: Humorous stories'
-- '!lcsh: Boys -- Fiction'
-- '!lcsh: Race relations -- Fiction'
 title: Adventures of Huckleberry Finn
 url: http://www.gutenberg.org/ebooks/76
