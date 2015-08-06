@@ -12,26 +12,6 @@ contributor:
     url: http://www.gutenberg.org/2009/agents/37155
     wikipedia: http://en.wikipedia.org/wiki/E._W._Kemble
 covers:
-- cover_type: archival
-  image_path: 76/76-h/76-h/images/cover.jpg
-  rights: Public domain in the USA.
-  rights_url: http://creativecommons.org/about/pdm
-- cover_type: archival
-  image_path: 76/images/bookcover.jpg
-  rights: Public domain in the USA.
-  rights_url: http://creativecommons.org/about/pdm
-- cover_type: archival
-  image_path: ///public/vhost/g/gutenberg/private/publish/76/images/titlepage.jpg
-  rights: Public domain in the USA.
-  rights_url: http://creativecommons.org/about/pdm
-- cover_type: archival
-  image_path: 76/76-h/images/bookcover.jpg
-  rights: Public domain in the USA.
-  rights_url: http://creativecommons.org/about/pdm
-- cover_type: archival
-  image_path: 76/76-h/images/cover.jpg
-  rights: Public domain in the USA.
-  rights_url: http://creativecommons.org/about/pdm
 - attribution: Priscilla Parizeau, 2015
   cover_type: original
   image_path: cover.jpg
