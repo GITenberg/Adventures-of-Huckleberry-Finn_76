@@ -10,10 +10,10 @@ script:
 - xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
 - cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
 - cp cover.jpg OEBPS/cover.jpg
-- mv ./images ./OEBPS/
+- if test -d "./images"; then mv ./images ./OEBPS/ ;fi
 - zip -rX book.epub mimetype
 - zip -rX book.epub OEBPS/ META-INF/
-- zip -rX book.epub OEBPS/images/
+- if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi 
 - mv book.epub Adventures-of-Huckleberry-Finn.epub
 branches:
   only:
