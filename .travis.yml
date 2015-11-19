@@ -1,6 +1,9 @@
 sudo: required
 dist: trusty
 language: ruby
+before_script:
+  - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 before_install:
 - gem install asciidoctor tilt
 - sudo pip install git+https://github.com/rdhyee/ebooklib.git
