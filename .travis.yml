@@ -3,7 +3,7 @@ dist: trusty
 language: ruby
 before_install:
 - gem install asciidoctor tilt
-- sudo pip install git+https://github.com/rdhyee/ebooklib.git 
+#- sudo pip install git+https://github.com/rdhyee/ebooklib.git 
 script:
 - VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
 - git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
@@ -16,7 +16,7 @@ script:
 - if test -d "./images"; then mv ./images ./OEBPS/ ;fi
 - zip -rX book.epub mimetype
 - zip -rX book.epub OEBPS/ META-INF/
-- if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi 
+- if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi
 - mv book.epub Adventures-of-Huckleberry-Finn.epub
 branches:
   only:
