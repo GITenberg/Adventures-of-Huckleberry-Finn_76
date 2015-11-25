@@ -12,15 +12,15 @@ script:
 - git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
 - cd asciidoctor-htmlbook; git checkout jinja-hook; cd ..
 - sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
-- pip freeze
-- which python
 - /usr/bin/python asciidoctor-htmlbook/gitberg-machine/machine.py -m metadata.yaml metadata.html
+- ls metadata.html
 - asciidoctor -a toc,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
   -d book book.asciidoc -o book.html
 - git clone https://github.com/gitenberg-dev/HTMLBook
 - xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
 - cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
 - cp cover.jpg OEBPS/cover.jpg
+- cp metadata.html OEBPS
 - if test -d "./images"; then mv ./images ./OEBPS/ ;fi
 - zip -rX book.epub mimetype
 - zip -rX book.epub OEBPS/ META-INF/
