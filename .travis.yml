@@ -10,7 +10,7 @@ before_install:
 script:
 - VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
 - git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
-- cd asciidoctor-htmlbook; git checkout jinja-hook; cd ..
+#- cd asciidoctor-htmlbook; git checkout jinja-hook; cd ..
 - sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
 - asciidoctor -a toc,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
   -d book book.asciidoc -o book.html
