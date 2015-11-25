@@ -16,10 +16,10 @@ script:
   -d book book.asciidoc -o book.html
 - git clone https://github.com/gitenberg-dev/HTMLBook
 
-- ls book.html
-- cat book.html
+# make book.html available to jinja2 environment by putting it into templates
+- cp book.html asciidoctor-htmlbook/gitberg-machine/templates/
 
-- /usr/bin/python asciidoctor-htmlbook/gitberg-machine/machine.py -m metadata.yaml book.html
+- /usr/bin/python asciidoctor-htmlbook/gitberg-machine/machine.py -o . -m metadata.yaml book.html
 #- /usr/bin/python ./gitberg-machine/machine.py -m /Documents/MyBook/metadata.yaml /Documents/MyBook/book.html
 - xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
 - cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
