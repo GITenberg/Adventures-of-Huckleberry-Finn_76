@@ -12,7 +12,7 @@ script:
 - git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
 #- cd asciidoctor-htmlbook; git checkout jinja-hook; cd ..
 - sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
-- asciidoctor -a toc,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
+- asciidoctor -a toc,idprefix=xx_,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
   -d book book.asciidoc -o book.html
 - git clone https://github.com/gitenberg-dev/HTMLBook
 
