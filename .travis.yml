@@ -5,7 +5,8 @@ language: ruby
 #  - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 #  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 before_install:
-- gem install asciidoctor tilt
+- gem install asciidoctor -v 1.5.2 
+- gem install tilt
 - sudo pip install git+https://github.com/rdhyee/ebooklib.git
 script:
 - VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
