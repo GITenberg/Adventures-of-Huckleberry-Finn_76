@@ -1,5 +1,5 @@
 _repo: Adventures-of-Huckleberry-Finn_76
-_version: 0.0.48
+_version: 0.0.49
 contributor:
   illustrator:
     agent_name: Kemble, E. W. (Edward Windsor)
@@ -42,17 +42,17 @@ publisher: Recovering the Classics
 rights: CC BY-NC
 rights_url: http://creativecommons.org/licenses/by-nc/4.0/
 subjects:
-- !lcsh Male friendship -- Fiction
-- !lcsh Fugitive slaves -- Fiction
-- !lcsh Bildungsromans
-- !lcsh Mississippi River -- Fiction
-- !lcsh Adventure stories
-- !lcsh Missouri -- Fiction
-- !lcsh Runaway children -- Fiction
-- !lcsh Finn, Huckleberry (Fictitious character) -- Fiction
-- !lcc PS
-- !lcsh Humorous stories
-- !lcsh Boys -- Fiction
-- !lcsh Race relations -- Fiction
+- !lcsh 'Male friendship -- Fiction'
+- !lcsh 'Fugitive slaves -- Fiction'
+- !lcsh 'Bildungsromans'
+- !lcsh 'Mississippi River -- Fiction'
+- !lcsh 'Adventure stories'
+- !lcsh 'Missouri -- Fiction'
+- !lcsh 'Runaway children -- Fiction'
+- !lcsh 'Finn, Huckleberry (Fictitious character) -- Fiction'
+- !lcc 'PS'
+- !lcsh 'Humorous stories'
+- !lcsh 'Boys -- Fiction'
+- !lcsh 'Race relations -- Fiction'
 title: Adventures of Huckleberry Finn
 url: http://www.gutenberg.org/ebooks/76
