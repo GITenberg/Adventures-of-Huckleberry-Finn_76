@@ -1,5 +1,5 @@
 _repo: Adventures-of-Huckleberry-Finn_76
-_version: 0.1.0
+_version: 0.1.1
 contributor:
   illustrator:
     agent_name: Kemble, E. W. (Edward Windsor)
@@ -54,5 +54,6 @@ subjects:
 - !lcsh 'Humorous stories'
 - !lcsh 'Boys -- Fiction'
 - !lcsh 'Race relations -- Fiction'
+- GITenberg
 title: Adventures of Huckleberry Finn
 url: http://www.gutenberg.org/ebooks/76
