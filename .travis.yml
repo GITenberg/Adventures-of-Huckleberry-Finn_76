@@ -31,6 +31,13 @@ script:
 branches:
   only:
   - master
+notifications:
+  webhooks:
+    urls:
+      - http://requestb.in/wrr6l3wr
+    on_success: always 
+    on_failure: always 
+    on_start: always
 deploy:
   skip_cleanup: true
   provider: releases
