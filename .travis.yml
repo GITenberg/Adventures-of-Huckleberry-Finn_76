@@ -34,7 +34,7 @@ branches:
 notifications:
   webhooks:
     urls:
-      - http://requestb.in/wrr6l3wr
+      - http://requestb.in/rw1b9irw
     on_success: always 
     on_failure: always 
     on_start: always
