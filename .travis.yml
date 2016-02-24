@@ -36,6 +36,7 @@ notifications:
     urls:
       - http://requestb.in/1iad5y31
       - https://just.unglue.it/api/travisci/webhook 
+      - https://unglue.it/api/travisci/webhook 
     on_success: always 
     on_failure: always 
     on_start: always
