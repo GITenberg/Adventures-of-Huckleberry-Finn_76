@@ -34,7 +34,8 @@ branches:
 notifications:
   webhooks:
     urls:
-      - http://requestb.in/oimt5voi
+      - http://requestb.in/1iad5y31
+      - https://just.unglue.it/api/travisci/webhook 
     on_success: always 
     on_failure: always 
     on_start: always
