@@ -21,34 +21,39 @@ script:
 - /usr/bin/python asciidoctor-htmlbook/gitberg-machine/machine.py -o . -m metadata.yaml book.html
 - xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
 - cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
-- cp cover.jpg OEBPS/cover.jpg
+- if [ -e cover.jpg ]; then cp cover.jpg OEBPS/cover.jpg; fi
 # look for first images directory and one found, copy over to ./OEBPS
 - find . -name images -type d | head -n 1 | xargs -I {} mv {} ./OEBPS/
 - zip -rX book.epub mimetype
 - zip -rX book.epub OEBPS/ META-INF/
 - if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi
 - mv book.epub Adventures-of-Huckleberry-Finn.epub
+- ebook-convert Adventures-of-Huckleberry-Finn.epub Adventures-of-Huckleberry-Finn.mobi
+- xvfb-run ebook-convert Adventures-of-Huckleberry-Finn.epub Adventures-of-Huckleberry-Finn.pdf
 branches:
   only:
   - master
 notifications:
   webhooks:
     urls:
-      - http://requestb.in/1iad5y31
-      - https://just.unglue.it/api/travisci/webhook 
       - https://unglue.it/api/travisci/webhook 
     on_success: always 
-    on_failure: always 
-    on_start: always
+    on_failure: never 
+    on_start: never
 deploy:
   skip_cleanup: true
   provider: releases
   api_key:
     secure: YLf4rbb/f1k7+tRn2Pr8+qs/pjR9TpNF2PFKl2soe/oGSI9J9QHajzjExmKTn+tfWE17Tc4+0Hzf1/eTMvCR3IMml+gwXABLlxBMbg1hXQbnnplYQD9idVXADrJ14fbXOOzit1JsZhS9OH7pn5ccqMeCgtLkwnirT90yQlxoSgvJuUt/szE4ELnLnvNgQ5YNFJaTDPoW6OkcSyFvUrCxXklFj1XCZatYtLVQhmZqncYJcKT3b97hlmTzkeLg9by7k8D+QH96wraYKD2Kr9av61rRCUHDLAfWM3a6aV2L2vDLnly/0bd+45+e5k/K1ZEGZWXvJiUS5wy2fK+OxIoEaVghXkQa1OrqlnAKL9YmEFqxotx9CxrTURM6+7rujORpC26rwuIyX8gKKHYmBLRZZXsOmAKxGSzVaH4n1s/qVfrkYOo3pGNzkAhcoJM6OFis8vHWKr9KU2gqSPwLWKgMwKb7RktEpf/DuViYFrNB/L7VIhsVOnvjvJjiixF70JoR89k8rZz8ZDaQmt17T+zf9Q2plHsyL7mFFous13LN1kJhnVPXwjdIoivLC6T7YcGgJ3fv+aF36Ols6u6oYkgAx+aLaTxKP0D96ctdLHVc9t/YGd7E47Mye9cOZQmJc5KbCVz+dip+HrZFXNfHSXnCYQIZCLfQ4KKn0ES41ye3ND0=
-  file: Adventures-of-Huckleberry-Finn.epub
+  file:
+    - Adventures-of-Huckleberry-Finn.epub
+    - Adventures-of-Huckleberry-Finn.mobi
+    - Adventures-of-Huckleberry-Finn.pdf
   "on":
     repo: GITenberg/Adventures-of-Huckleberry-Finn_76
 addons:
   apt:
     packages:
     - xsltproc
+    - xvfb
+    - calibre
