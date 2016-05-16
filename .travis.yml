@@ -27,9 +27,9 @@ script:
 - zip -rX book.epub mimetype
 - zip -rX book.epub OEBPS/ META-INF/
 - if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi
-- mv book.epub Adventures-of-Huckleberry-Finn.epub
-- ebook-convert Adventures-of-Huckleberry-Finn.epub Adventures-of-Huckleberry-Finn.mobi
-- xvfb-run ebook-convert Adventures-of-Huckleberry-Finn.epub Adventures-of-Huckleberry-Finn.pdf
+- mv book.epub book.epub
+- ebook-convert book.epub book.mobi
+- xvfb-run ebook-convert book.epub book.pdf
 branches:
   only:
   - master
@@ -46,9 +46,9 @@ deploy:
   api_key:
     secure: YLf4rbb/f1k7+tRn2Pr8+qs/pjR9TpNF2PFKl2soe/oGSI9J9QHajzjExmKTn+tfWE17Tc4+0Hzf1/eTMvCR3IMml+gwXABLlxBMbg1hXQbnnplYQD9idVXADrJ14fbXOOzit1JsZhS9OH7pn5ccqMeCgtLkwnirT90yQlxoSgvJuUt/szE4ELnLnvNgQ5YNFJaTDPoW6OkcSyFvUrCxXklFj1XCZatYtLVQhmZqncYJcKT3b97hlmTzkeLg9by7k8D+QH96wraYKD2Kr9av61rRCUHDLAfWM3a6aV2L2vDLnly/0bd+45+e5k/K1ZEGZWXvJiUS5wy2fK+OxIoEaVghXkQa1OrqlnAKL9YmEFqxotx9CxrTURM6+7rujORpC26rwuIyX8gKKHYmBLRZZXsOmAKxGSzVaH4n1s/qVfrkYOo3pGNzkAhcoJM6OFis8vHWKr9KU2gqSPwLWKgMwKb7RktEpf/DuViYFrNB/L7VIhsVOnvjvJjiixF70JoR89k8rZz8ZDaQmt17T+zf9Q2plHsyL7mFFous13LN1kJhnVPXwjdIoivLC6T7YcGgJ3fv+aF36Ols6u6oYkgAx+aLaTxKP0D96ctdLHVc9t/YGd7E47Mye9cOZQmJc5KbCVz+dip+HrZFXNfHSXnCYQIZCLfQ4KKn0ES41ye3ND0=
   file:
-    - Adventures-of-Huckleberry-Finn.epub
-    - Adventures-of-Huckleberry-Finn.mobi
-    - Adventures-of-Huckleberry-Finn.pdf
+    - book.epub
+    - book.mobi
+    - book.pdf
   "on":
     repo: GITenberg/Adventures-of-Huckleberry-Finn_76
 addons:
